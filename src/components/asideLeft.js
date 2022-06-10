@@ -43,7 +43,7 @@ const AsideLeft = () => {
         <h3 className='cityName'>City Name</h3>
         <input type="text" id='search' placeholder='Enter city...' onChange={handleSearch}  />
         <form onSubmit={handleFormSubmit}>
-            <input checked={tempType==='fahrenheit'} type="radio" onChange={handleTempTypeChange} id='fahrenheit' value='fahrenheit' />
+            <input checked={tempType==='fahrenheit'} type="radio" onChange={handleTempTypeChange} id='fahrenheit' name='fahrenheit' value='fahrenheit' />
             <label htmlFor="fahrenheit">Fahrenheit</label>
             <br />
             <input onChange={handleTempTypeChange} type="radio" id='celsius' name='degree' value='celsuis' /> {' '}

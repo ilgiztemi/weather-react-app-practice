@@ -4,8 +4,7 @@ import AsideRight from './asideRight'
 
 const Main = () => {
   return (
-    <div>
-        <h1>React Weather App</h1>
+    <div className='main'>
         <AsideLeft />
         <AsideRight />
     </div>
