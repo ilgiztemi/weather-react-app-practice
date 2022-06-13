@@ -5,6 +5,14 @@
 }
 .App {
   text-align: center;
+  background-color: #66cdaa;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+.App-h1 {
+  text-shadow: 5px 5px 10px;
+  margin: 20px;
 }
 .main {
   display: flex;

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React from 'react'
 import { useState } from 'react'
+import 'weather-icons-master/css/weather-icons.css';
+
 
 const AsideLeft = () => {
     const [searchValue, setSearchValue] = useState('');
@@ -40,10 +42,9 @@ const AsideLeft = () => {
     
   return (
     <aside>
-        <h3 className='cityName'>City Name</h3>
         <input type="text" id='search' placeholder='Enter city...' onChange={handleSearch}  />
         <form onSubmit={handleFormSubmit}>
-            <input checked={tempType==='fahrenheit'} type="radio" onChange={handleTempTypeChange} id='fahrenheit' name='fahrenheit' value='fahrenheit' />
+            <input checked={tempType==='fahrenheit'} type="radio" onChange={handleTempTypeChange} id='fahrenheit' name='degree' value='fahrenheit' />
             <label htmlFor="fahrenheit">Fahrenheit</label>
             <br />
             <input onChange={handleTempTypeChange} type="radio" id='celsius' name='degree' value='celsuis' /> {' '}

@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import 'weather-icons/css/weather-icons.css';
+import 'weather-icons-master/css/weather-icons.css';
 
 const AsideRight = () => {
     const [currLocData, setCurLocData] = useState({
@@ -40,7 +40,7 @@ const AsideRight = () => {
         }
     }, [])
     const convertCtoF = (temp) => {
-        return Math.floor(((temp - 273.15) * 9) / 5 + 32);
+        return Math.floor((temp - 273.15));
       };
     
       const minMaxTemp = (min, max) => {

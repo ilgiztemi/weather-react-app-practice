@@ -5,7 +5,7 @@ import Main from './components/main';
 function App() {
   return (
     <div className="App">
-      <h1>React Weather App</h1>
+      <h1 className='App-h1'>React Weather App</h1>
       <Main />
     </div>
   );
