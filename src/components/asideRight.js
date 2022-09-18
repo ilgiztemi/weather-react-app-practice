@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import 'weather-icons-master/css/weather-icons.css';
 
 const AsideRight = () => {
     const [currLocData, setCurLocData] = useState({

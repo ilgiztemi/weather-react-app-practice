@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react'
 import { useState } from 'react'
-import 'weather-icons-master/css/weather-icons.css';
 
 
 const AsideLeft = () => {
